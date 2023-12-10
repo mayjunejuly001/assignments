@@ -6,7 +6,9 @@
 */
 
 function countVowels(str) {
-    // Your code here
+  let newStr = str.toLowerCase().replaceAll(/[^aeiou]/g, '')
+
+  return newStr.length
 }
 
-module.exports = countVowels;
+module.exports = countVowels
